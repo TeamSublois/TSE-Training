@@ -25,5 +25,6 @@ Just update your progress on the repo's Kanban Boards as you go along. I'll set 
 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
 [Bootstrap](https://getbootstrap.com/)  
 [Learn X in Y minutes](https://learnxinyminutes.com/)  
+[Learn You Node](https://github.com/workshopper/learnyounode)  
 
 **Since other people are going to be on this repo as well, please don't merge anything back into master—just work on your own branch.**  
