@@ -1,0 +1,20 @@
+#mainHeader{
+	font-family: Arial;
+	font-weight: bold;
+	margin: 50px;
+	
+}
+
+#textBox{
+	width: 250px;
+	height: 26px;
+}
+
+.toCenter{
+	margin: auto;
+	text-align: center;
+}
+
+#addButton{
+	color: white;
+}
