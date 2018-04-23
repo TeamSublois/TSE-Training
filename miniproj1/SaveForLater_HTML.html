@@ -19,20 +19,72 @@
 			Save it Later
 		</h1> 
 		
-		<input type="text" id="textBox"> 
-		<button id="addButton" onclick="addLink()"> 
+		
+		
+		<!-- Text Box and Button -->
+		<input id="textBox" type="text"> 
+		<button id="addButton" onclick="addEntry()"> 
 			<img src="Add Button.png" >
 		</button>
+
+		<br>
+		
+		<!-- Create table to store entries -->
+		<table id="tableOfEntries" class="toCenter">
+			<tbody>
+				<tr>
+					<td>
+						Your Entries
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
 	</div>
 	
 	
 	
 	<!-- Body's Functions -->
 	<script>
-	function addLink(){
-		document.
-		var tableOfLinks = document.createElement("TABLE");
+	
+	
+	/**
+	Function: addEntry
+	This function appends each user-entered entry to the end of the list. 
+	*/
+	function addEntry(){
+		//Create reference to table
+		var table = document.getElementById("tableOfEntries").getElementsByTagName("tbody")[0];
 		
+		//Create new row and add data cell to it
+		var newRow = table.insertRow(table.rows.length);
+		var newCell = newRow.insertCell(0);
+		
+		//Retrieve and convert user input to link
+		var userInput = getUserInput();
+		//var userInputToLink = getUserInput().link("userInput");
+		
+		//Append user input to end of table
+		var entry = document.createTextNode(userInput);
+		newCell.appendChild(entry);
+		
+		clearTextBox();
+	
+	}
+	/**
+	Function: getUserInput
+	This function returns user input from the text box.
+	*/
+	function getUserInput(){
+		return document.getElementById("textBox").value;
+	}
+	
+	/**
+	Function: clearTextBox
+	This function clears the text box by replacing it with empty quotes.
+	*/
+	function clearTextBox(){
+		document.getElementById("textBox").value = "";
 	}
 	</script>
 
