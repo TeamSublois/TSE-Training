@@ -1,0 +1,38 @@
+
+body {
+	background: #e8e8e8;
+}
+
+.initialbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.firstline {
+	display: inline-block;
+}
+.secondline {
+	flex-direction: row;
+}
+
+.logo {
+	
+	display: inline-block;
+	background: lightblue;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+}
+
+.title {
+
+	display: inline-block;
+	background: green;
+	width:300px;
+	height:100px;
+	vertical-align: top;
+}
