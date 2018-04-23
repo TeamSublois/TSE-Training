@@ -1,0 +1,11 @@
+#mainHeader{
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px;
+}
+
+toCenter{
+	margin: auto;
+}
+
