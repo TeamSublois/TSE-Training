@@ -3,7 +3,7 @@ body {
 	background: #e8e8e8;
 }
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -44,6 +44,12 @@ input[type="text"] {
 	vertical-align: top;
 }
 
+.logo:hover {
+	background: black;
+}
+
+
+
 .title {
 
 	display: inline-block;
@@ -58,14 +64,30 @@ ul {
 	list-style: none;
 	padding-left: 0;
 	text-align: left;
+	border: 20px;
 }
 
 ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    background: skyblue;
-    margin: 5px;
-    font-size: 18px;
-    transition: 0.2s;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: skyblue;
+	margin: 5px;
+	font-size: 18px;
+	overflow: auto;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+button {
+	border:0;
+	margin:0;
+	float:right;
+}
+
+button .clicked {
+  background-color: black;
+  color: white;
 }

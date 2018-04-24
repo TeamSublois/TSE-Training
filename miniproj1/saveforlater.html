@@ -6,38 +6,64 @@
 	<link rel="stylesheet" type="text/css" href="style.css" /> 
 
 	<script type="text/javascript">
+		
+
+		function closeButton(){
+			var button = document.createElement("BUTTON");
+			var t = document.createTextNode("X");
+			button.appendChild(t);
+			return button;
+		}
+
+		function favButton(){
+			var button = document.createElement("BUTTON");
+			var t = document.createTextNode("STAR");
+			button.appendChild(t);
+			return button;
+		}
+
 		// Create a new list item when clicking on the "Add" button
 		function newElement() {
 			var li = document.createElement("li");
 			var inputValue = document.getElementById("myInput").value;
+			var a = document.createElement("a");
 			var t = document.createTextNode(inputValue);
 			li.appendChild(t);
 			if (inputValue === '') {
 				alert("links only please!");
 			} else {
+				a.href = inputValue;
+				a.appendChild(t);
+				li.appendChild(a);
 				document.getElementById("myUL").appendChild(li);
+
+				li.appendChild(closeButton());
+				li.appendChild(favButton());
 			}
 			document.getElementById("myInput").value = "";
 		} 
+
+		
+
 	</script>
 </head>
 
 <body>
-	<div class ='initialbox'>
-		<div class='firstline'>
-			<div class='logo'>logo</div>
-			<div class='title'><h1>Save It Later!</h1></div>		
-		</div>
-		<div class='secondline'>
-			<input type="text" class="textbox" id='myInput' placeholder="i hope you're putting a link">
-			<input type="submit" class="button" onclick="newElement()" value="Submit">
-		</div>
-		<div class='todolist'>
-			<ul id="myUL">
-				
-			</ul>
-		</div>
+	
+	<div class='firstline'>
+		<div class='logo'><a href="https://www.google.com">logo</a></div>
+		<div class='title'><h1>Save It Later!</h1></div>		
 	</div>
+	<div class='secondline'>
+		<input type="text" class="textbox" id='myInput' placeholder="include https:// or it doesn't work">
+		<input type="submit" class="button" onclick="newElement()" value="Submit">
+	</div>
+
+	<ul id="myUL">
+		<li><a href="https://www.sumeetgod.com/">https://www.sumeetgod.com</a></li>
+	</ul>
+
+	
 
 </body>
 </html>
