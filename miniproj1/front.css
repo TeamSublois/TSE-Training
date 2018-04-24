@@ -7,7 +7,6 @@ ul {
 	margin: auto;
 	padding: 0;
 	width: 35%;
-	padding-right: 10px;
 }
 
 ul li {
@@ -61,7 +60,7 @@ ul li.checked::before {
 
 .header {
 	margin: auto;
-	width: 40%;
+	width: 39%;
 	background-color: white;
 	padding: 30px 40px;
 	color: black;
@@ -83,12 +82,12 @@ input {
 }
 
 .addBtn {
-	margin-left: 20px;
+	justify-content: right;
 	padding: 10px;
 	width: 24%;
 	border: 1px solid black;
 	background: white;
-	float: left;
+	float: right;
 	text-align: center;
 	font-size: 16px;
 	cursor: pointer;
