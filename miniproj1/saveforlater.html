@@ -3,9 +3,23 @@
 <head>
 	<meta charset='UTF-8'/>
 	<title>Save It Later!</title>
-	
 	<link rel="stylesheet" type="text/css" href="style.css" /> 
 
+	<script type="text/javascript">
+		// Create a new list item when clicking on the "Add" button
+		function newElement() {
+			var li = document.createElement("li");
+			var inputValue = document.getElementById("myInput").value;
+			var t = document.createTextNode(inputValue);
+			li.appendChild(t);
+			if (inputValue === '') {
+				alert("links only please!");
+			} else {
+				document.getElementById("myUL").appendChild(li);
+			}
+			document.getElementById("myInput").value = "";
+		} 
+	</script>
 </head>
 
 <body>
@@ -15,9 +29,15 @@
 			<div class='title'><h1>Save It Later!</h1></div>		
 		</div>
 		<div class='secondline'>
-			<input type="text" name="to be saved" value="What do you want to save?">
-			<input type="submit" value="Submit">
+			<input type="text" class="textbox" id='myInput' placeholder="i hope you're putting a link">
+			<input type="submit" class="button" onclick="newElement()" value="Submit">
+		</div>
+		<div class='todolist'>
+			<ul id="myUL">
+				
+			</ul>
 		</div>
 	</div>
+
 </body>
 </html>
