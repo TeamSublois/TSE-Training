@@ -1,6 +1,6 @@
 ## sprint 2
-#### Modified from [Sumeet Bansal's training rpeo](https://github.com/sumeet-bansal/tse-training/tree/master/sprint-2)
-This sprint is focused on introducing Node.js with Express. **N**ode.js and **E**xpress, plus **M**ongoDB and **R**eact, form the **MEAN** stack, which is what we'll be working with throughout the quarter. As with the last sprint, keep updating your progress on the repo's Kanban Boards as you go along.
+#### Modified from [Sumeet Bansal's training repo](https://github.com/sumeet-bansal/tse-training/tree/master/sprint-2)
+This sprint is focused on introducing Node.js with Express. **N**ode.js and **E**xpress, plus **M**ongoDB and **R**eact, form the **MERN** stack, which is what we'll be working with throughout the quarter. As with the last sprint, keep updating your progress on the repo's Kanban Boards as you go along.
 
 ### Introduction to Node.js with Express
 The reason I'm bundling Node.js with Express instead of going through each separately is because Node's just a JavaScript runtime environment&mdash;it allows you to run JavaScript outside of a browser (e.g. in a server or a desktop client). Express is a framework that builds on top of that and is designed for building web applications and APIs, which is what we're doing. That's a simplified explanation but also the gist of it.

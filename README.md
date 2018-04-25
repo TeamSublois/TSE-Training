@@ -19,7 +19,7 @@ Just update your progress on the repo's Kanban Boards as you go along. I'll set 
 3. Complete [the "Make a Website" Codecademy course](https://www.codecademy.com/learn/make-a-website).
 4. Clone this repo.
 5. Create your own branch (duplicate the `master` branch).
-6. Start on Part 1 of [Mini Project 1 - Save For Later](miniproj1/saveforlater.md)
+6. Start on Part 1 of [Mini Project 1 - Save For Later](sprint-1/saveforlater.md)
 
 #### Resources
 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
