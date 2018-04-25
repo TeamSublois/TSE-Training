@@ -44,11 +44,15 @@
 			function newElement() {
 				var li = document.createElement("li");
 				var inputValue = document.getElementById("myInput").value;
+				var a = document.createElement("a");
 				var t = document.createTextNode(inputValue);
 				li.appendChild(t);
 				if (inputValue === '') {
 					alert("You must link something!");
 				} else {
+					a.href = inputValue;
+					a.target = "_blank";
+					a.appendChild(t);
 					document.getElementById("myUL").appendChild(li);
 				}
 				document.getElementById("myInput").value = "";
@@ -57,6 +61,7 @@
 				var txt = document.createTextNode("\u00D7");
 				span.className = "close";
 				span.appendChild(txt);
+				li.appendChild(a);
 				li.appendChild(span);
 
 				for (i = 0; i < close.length; i++) {
