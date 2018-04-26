@@ -33,7 +33,7 @@
 		<table id="tableOfEntries" class="toCenter" border="1">
 			<tbody>
 				<tr>
-					<th scope="col" font-weight="bold">
+					<th scope="col" font-weight="bold" >
 						Your Entries
 					</th>
 				</tr>
@@ -55,7 +55,7 @@
 		var table = document.getElementById("tableOfEntries")
 			.getElementsByTagName("tbody")[0]; //Reference to table
 	
-		//Check if any input (error checking)
+		//Check if any input
 		if(getUserInput() === ""){
 			alert("You must enter something.");
 			return;
@@ -74,55 +74,65 @@
 		newLink.setAttribute("target", "_blank");
 		var linkText = document.createTextNode(userInput);
 		newLink.appendChild(linkText);
-		
 		//Add the entered link into the cell
 		newCell.appendChild(newLink);
 		
-		//Add deleteButton to row
-		var delButton = document.createElement("button");
-		var delButtonText = document.createTextNode("Delete");
-		delButton.appendChild(delButtonText);
+		//Create Del and Fav buttons
+		var favButton = makeFavBtn(newCell);
+		var delButton = makeDelBtn(newCell);
+		delButton.onclick = function(){ newRow.deleteCell(0) };
+		favButton.onclick = function(){
+			var favText = document.createTextNode("Favorited!");
+			newCell.appendChild(favText);
+		};
+		//Mouseover Events for Del and Fav buttons
+		newCell.onmouseover = function(){ 
+			favButton.style.visibility = "visible";
+			delButton.style.visibility = "visible";
+		};
+		newCell.onmouseout = function(){
+			favButton.style.visibility = "hidden";
+			delButton.style.visibility = "hidden";
+		};
 		
-			//delButton.setAttribute("value", rowIndex);
-			//rowIndex += 1;
-			//delButton.setAttribute("onclick", "deleteRow(rowIndex)");
-		newCell.appendChild(delButton);
 		
-		//Add the favButton to row
-		var favButton = document.createElement("button");
-		var favButtonText = document.createTextNode("Favorite");
-		favButton.appendChild(favButtonText);
-		favButton.setAttribute("onclick", "favRow()");
-		newCell.appendChild(favButton);	
-		
+	
 		clearTextBox();
 	
 	}
 	
-	//function deleteRow(rowIndex){
-			//console.log(rowIndex);
-			//table.deleteRow(rowIndex);
-			
-	//}
+	/**
+	Function: makeFavBtn
+	Creates fav button and makes it hidden by default. 
+	*/
+	function makeFavBtn(newCell){
+		var favButton = document.createElement("button");
+		var favButtonText = document.createTextNode("<3");
+		favButton.appendChild(favButtonText);
+		//favButton.onclick = function(){console.log("favorited!") } ; //temp
+		newCell.appendChild(favButton);	
+		
+		favButton.style.visibility = "hidden";
+		
+		return favButton;
+	}
 	
-	function favRow(){
-		var table = document.getElementById("tableOfEntries")
-			.getElementsByTagName("tbody")[0]; //Reference to table
-		var favCell = table.row[table.rows.length - 1].insertCell[1];
-		var favText = document.createTextNode("Favorited!");
-		favCell.appendChild(favText);
+	/**
+	Function: makeDelBtn
+	Creates del button and makes it hidden by default. 
+	*/
+	function makeDelBtn(newCell){
+		var delButton = document.createElement("button");
+		var delButtonText = document.createTextNode("X");
+		delButton.appendChild(delButtonText);
+		//delButton.onclick = function{ deleteCell };
+		newCell.appendChild(delButton);
 		
+		delButton.style.visibility = "hidden";
 		
-		//var cell = table.rows[table.rows.length].cell[0];
-		//cell.style.background-color = "green";
-			
-			
-			
-		//var tr = document.getElementById(table).getElementsByTagName("td");
-		//tr[0].style.background-color = "green";
+		return delButton;
 	}
 
-	
 	/**
 	Function: getUserInput
 	This function returns user input from the text box.
