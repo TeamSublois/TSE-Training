@@ -90,12 +90,20 @@ ul li:hover {
     cursor: pointer;
 }
 
+.fav {
+	float:right;
+	margin-right: 100px;
+}
+
+.fav .checked {
+	background:black;
+}
+
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
+ul li .checked {
+    background: red;
+
 }
 
 /* Add a "checked" mark when clicked on */
