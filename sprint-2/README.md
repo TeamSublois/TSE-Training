@@ -10,7 +10,7 @@ The reason I'm bundling Node.js with Express instead of going through each separ
 3. Clone/pull this repo and create your own branch&mdash;same as the last sprint.
 4. Complete the following mini-project (and update the Kanban board).
 
-### Project 3: navigational-skeleton
+### Project 2: navigational-skeleton
 __Description__: *set up and deploy a basic navigational skeleton.*
 1. Using what you learned in [the last sprint](https://github.com/sumeet-bansal/tse-training/tree/master/sprint-1), recreate the webpages shown below.
 
