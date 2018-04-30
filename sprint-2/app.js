@@ -21,3 +21,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/about', about);
 
 module.exports = app;
+
+app.get('/', function(req, res) {
+  res.render('index');
+});
+
+app.get('/posts', function(req, res) {
+  res.render('posts');
+});
+
+app.get('/post1', function(req, res) {
+  res.render('post1');
+});
+
+app.get('/about', function(req, res) {
+  res.render('about');
+});
