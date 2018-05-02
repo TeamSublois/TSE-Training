@@ -1,0 +1,269 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fav",
+				"fav"
+			],
+			[
+				"span",
+				"span1"
+			],
+			[
+				"input",
+				"inputValue"
+			],
+			[
+				"close",
+				"closeButton"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"align",
+				"align-content"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"height",
+				"min-height"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"mr",
+				"mr-sm-2"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"object",
+				"object-fit"
+			],
+			[
+				"Or",
+				"OrgFilter"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"margin-",
+				"margin-right"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 479.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/wesley/Documents/tse_training/TSE-Training/sprint-2/sprint-2",
+		"/home/wesley/my-app/README.md",
+		"/home/wesley/my-app/src/index.js",
+		"/home/wesley/Documents/tse_training/TSE-Training/miniproj1/style.css",
+		"/home/wesley/Documents/tse_training/TSE-Training/miniproj1/saveforlater.html",
+		"/home/wesley/Documents/tse_training/TSE-Training/miniproj1/saveforlater",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/templates/mainapp/recommended.html",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/static/css/style.css",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/views.py",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/static/css/home.css",
+		"/home/wesley/Documents/sublois/OrgMatch/.env",
+		"/home/wesley/Documents/sublois/OrgMatch/orgmatch/settings.py",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/urls.py",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/templates/mainapp/nav.html",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/static/css/category.css",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/templates/mainapp/category.html",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/templates/mainapp/home.html",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/templates/mainapp/index.html",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/models.py",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/filters.py",
+		"/home/wesley/Documents/sublois/OrgMatch/mainapp/templates/mainapp/search.html",
+		"/home/wesley/examples.desktop",
+		"/home/wesley/pgadmin4/lib/python3.x/site-packages/pgadmin4/config_local.py",
+		"/etc/apt/sources.list.d/pgdg.list"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sprint-2.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
