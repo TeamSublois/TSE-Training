@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+	<!-- Link CSS file -->
+	<link rel="stylesheet" type="text/css" href="SaveForLater_CSS.css"> 
+	
+	<!-- Tab title -->
+	<title>Save  it  Later</title>
+</head>
+ 
+<body>
+	
+	<!-- Center all elements -->
+	<div class="toCenter">
+		<!-- Main header and picture -->
+		<h1 id="mainHeader" class="toCenter"> 
+			<img src="Folder Thing.png"> 
+			Save it Later
+		</h1> 
+		
+		
+		
+		<!-- Text Box and Button -->
+		<input id="textBox" type="text"> 
+		<button id="addButton" onclick="addEntry()"> 
+			<img src="Add Button.png" >
+		</button>
+
+		<br>
+		
+		<!-- Create table to store entries -->
+		<table id="tableOfEntries" class="toCenter" border="1">
+			<tbody>
+				<tr>
+					<th scope="col" font-weight="bold" >
+						Your Entries
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+	
+	
+	
+	<!-- Body's Functions -->
+	<script>
+	
+	/**
+	Function: addEntry
+	This function appends each user-entered entry to the end of the list. 
+	*/
+	function addEntry(){
+		var table = document.getElementById("tableOfEntries")
+			.getElementsByTagName("tbody")[0]; //Reference to table
+	
+		//Check if any input
+		if(getUserInput() === ""){
+			alert("You must enter something.");
+			return;
+		}
+		
+		//Create new row and add data cell to it
+		var newRow = table.insertRow(table.rows.length);
+		var newCell = newRow.insertCell(0);
+		
+		//Retrieve user input
+		var userInput = getUserInput();
+		
+		//Convert user input to link that opens up a new window
+		var newLink = document.createElement("a");
+		newLink.setAttribute("href", userInput);
+		newLink.setAttribute("target", "_blank");
+		var linkText = document.createTextNode(userInput);
+		newLink.appendChild(linkText);
+		//Add the entered link into the cell
+		newCell.appendChild(newLink);
+		
+		//Create Del and Fav buttons
+		var favButton = makeFavBtn(newCell);
+		var delButton = makeDelBtn(newCell);
+		delButton.onclick = function(){ newRow.deleteCell(0) };
+		favButton.onclick = function(){
+			var favText = document.createTextNode("Favorited!");
+			newCell.appendChild(favText);
+		};
+		//Mouseover Events for Del and Fav buttons
+		newCell.onmouseover = function(){ 
+			favButton.style.visibility = "visible";
+			delButton.style.visibility = "visible";
+		};
+		newCell.onmouseout = function(){
+			favButton.style.visibility = "hidden";
+			delButton.style.visibility = "hidden";
+		};
+		
+		
+	
+		clearTextBox();
+	
+	}
+	
+	/**
+	Function: makeFavBtn
+	Creates fav button and makes it hidden by default. 
+	*/
+	function makeFavBtn(newCell){
+		var favButton = document.createElement("button");
+		var favButtonText = document.createTextNode("<3");
+		favButton.appendChild(favButtonText);
+		//favButton.onclick = function(){console.log("favorited!") } ; //temp
+		newCell.appendChild(favButton);	
+		
+		favButton.style.visibility = "hidden";
+		
+		return favButton;
+	}
+	
+	/**
+	Function: makeDelBtn
+	Creates del button and makes it hidden by default. 
+	*/
+	function makeDelBtn(newCell){
+		var delButton = document.createElement("button");
+		var delButtonText = document.createTextNode("X");
+		delButton.appendChild(delButtonText);
+		//delButton.onclick = function{ deleteCell };
+		newCell.appendChild(delButton);
+		
+		delButton.style.visibility = "hidden";
+		
+		return delButton;
+	}
+
+	/**
+	Function: getUserInput
+	This function returns user input from the text box.
+	*/
+	function getUserInput(){
+		return document.getElementById("textBox").value;
+	}
+	
+	/**
+	Function: clearTextBox
+	This function clears the text box by replacing it with empty quotes.
+	*/
+	function clearTextBox(){
+		document.getElementById("textBox").value = "";
+	}
+	</script>
+
+ 
+</body>
+</html>
