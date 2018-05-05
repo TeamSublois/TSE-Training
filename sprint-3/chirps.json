@@ -1,0 +1,58 @@
+{
+	"chirps": [
+		{
+			"isRetweet": true,
+			"author_name": "KANYE WEST",
+			"author_handle": "kanyewest",
+			"text": "You have distracted from my creative process",
+			"comments": "150",
+			"retweets": "28K",
+			"likes": "27K"
+		},
+		{
+			"isRetweet": true,
+			"author_name": "KANYE WEST",
+			"author_handle": "kanyewest",
+			"text": "7th I am your OG   and I will be respected as such",
+			"comments": "150",
+			"retweets": "34K",
+			"likes": "24K"
+		},
+		{
+			"isRetweet": true,
+			"author_name": "KANYE WEST",
+			"author_handle": "kanyewest",
+			"text": "maybe I couldn't be skinny and tall but I'll settle for being the greatest artist of all time as a consolation",
+			"comments": "150",
+			"retweets": "28K",
+			"likes": "27K"
+		},
+		{
+			"isRetweet": true,
+			"author_name": "KANYE WEST",
+			"author_handle": "kanyewest",
+			"text": "You have distracted from my creative process",
+			"comments": "150",
+			"retweets": "28K",
+			"likes": "27K"
+		},
+		{
+			"isRetweet": false,
+			"author_name": "gary",
+			"author_handle": "gary",
+			"text": "As announced at the final exam, the grade breakdown will be posted on Piazza early this week. I also announced that my deadline to submit gr",
+			"comments": "1",
+			"retweets": "402K",
+			"likes": "97K"
+		},
+		{
+			"isRetweet": false,
+			"author_name": "gary",
+			"author_handle": "gary",
+			"text": ".",
+			"comments": "0",
+			"retweets": "0",
+			"likes": "2"
+		}
+	]
+}
