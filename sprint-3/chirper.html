@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>chirper</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="chirper.css">
+		<script src="chirps.json"></script>
 	</head>
-	<body>
-		<div class="container main">
+	<body class="container" style="background: #fcfcfc">
+		<div class="container" style="margin-top: 50px">
 			<div class="row">
 				<div class="col-3">
-					<img src="https://vignette.wikia.nocookie.net/uncyclopedia/images/0/01/DramaticQuestionMark.png/revision/latest?cb=20060419021703" alt="melatonin" class="img-thumbnail">
+					<img src="public/images/profile.jpeg" alt="gary gillespie" class="img-thumbnail">
 				</div>
 				<div class="col-9">
-					<div class="card">
-						<div class="card-body">
-					    	<i class="fas fa-retweet"></i>
-					    	<h7 class="card-subtitle mb-2 text-muted">who retweeted</h7>
-					    	<h4 class="card-title mt-2">SEAN NAM (@snam)</h4>
-					    	<p class="card-text">vroom vroom</p>
-					    	<i class="far fa-comment">150</i>
-					    	<i class="fas fa-retweet">28k</i>
-					    	<i class="fas fa-heart">27k</i>
+						<div class="card">
+							<div class="card-body">
+						    	<i class="fas fa-retweet"></i>
+						    	{{if isRetweet}}
+						    		<h7 class="card-subtitle mb-2 text-muted">gary retweeted</h7>
+						    	{{/if}}
+						    	<h4 class="card-title mt-2">{{author_name}} (@{{author_handle}})</h4>
+						    	<p class="card-text">{{text}}</p>
+						    	<i class="far fa-comment">{{comments}}</i>
+						    	<i class="fas fa-retweet">{{retweets}}</i>
+						    	<i class="fas fa-heart">{{likes}}</i>
+							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</div>
