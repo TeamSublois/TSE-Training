@@ -10,15 +10,15 @@
 			<div class="row">
 
 				<div class="col-3">
-					<img src="public/images/profile.jpeg" alt="gary gillespie" class="img-thumbnail">
+					<img src="images/profile.jpeg" alt="gary gillespie" class="img-thumbnail">
 				</div>
 
 				<div class="col-9">
 					{{#each chirps}}
 						<div class="card">
 							<div class="card-body">
-						    	<i class="fas fa-retweet"></i>
-						    	{{if isRetweet}}
+						    	{{#if isRetweet}}
+						    		<i class="fas fa-retweet"></i>
 						    		<h7 class="card-subtitle mb-2 text-muted">gary retweeted</h7>
 						    	{{/if}}
 						    	<h4 class="card-title mt-2">{{author_name}} (@{{author_handle}})</h4>
@@ -30,7 +30,7 @@
 						</div>
 					{{/each}}
 				</div>
-				
+
 			</div>
 		</div>
 	</body>
