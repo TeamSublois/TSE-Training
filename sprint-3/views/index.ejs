@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>chirper</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	</head>
+	<body class="container" style="background: #fcfcfc">
+		<div class="container" style="margin-top: 50px">
+			<div class="row">
+
+				<div class="col-3">
+					<img src="images/profile.jpeg" alt="gary gillespie" class="img-thumbnail">
+				</div>
+
+				<div class="col-9">
+					<form action="/new" method="POST" style="margin-bottom: 20px">
+						<input type="text" placeholder="Name" name="author_name">
+						<input type="text" placeholder="Handle" name="author_handle">
+						<input type="text" placeholder="Text" name="text">
+						<button type="submit">Post</button>
+					</form>
+
+					<% for(var i=0; i<chirps.length; i++) {%>
+						<div class="card">
+							<div class="card-body">
+						    	<% if (chirps[i].isRetweet) { %>
+						    		<i class="fas fa-retweet"></i>
+						    		<h7 class="card-subtitle mb-2 text-muted">gary retweeted</h7>
+						    	<% } %>
+						    	<h4 class="card-title mt-2"><%= chirps[i].author_name %> (@<%= chirps[i].author_handle %>)</h4>
+						    	<p class="card-text"><%= chirps[i].text %></p>
+						    	<i class="far fa-comment"><%= chirps[i].comments %></i>
+						    	<i class="fas fa-retweet"><%= chirps[i].retweets %></i>
+						    	<i class="fas fa-heart"><%= chirps[i].likes %></i>
+							</div>
+						</div>
+					<% } %>
+
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>
