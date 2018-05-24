@@ -6,6 +6,7 @@ Hey y'all. This is just a couple exercises to get you guys a bit more acquainted
 Reach out if you're having trouble with any of it and communicate with me if anything comes up that makes it difficult for you to finish tasks in time (e.g. classwork, midterms, breakup, whatever) or if I just underestimated how much time everything would take and assigned an absurd amount of work.
 
 ## Resources
+- [Placeholder JSON Data](https://jsonplaceholder.typicode.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) for [ExpressJS](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs), especially [part 2 (creating a skeleton website)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website) and [the first bit of part 4 (routes and controllers)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes) 
 - [Bootstrap](https://getbootstrap.com/)  
